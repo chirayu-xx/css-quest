@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.head__robot{
+    position:relative;
+    left:200px;
+    background:radial-gradient(circle, white 15%, transparent 40%), rgb(18, 173, 225);
+    background-size: 50px 50px;
+    height:100px;
+    width:150px;
+    background-color:rgb(1, 1, 1);
+    border: 30px 30px 30px 30px;
+    border-radius:100%;
+}
+  
+.middle{
+    position: relative;
+    left:169px;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 100px;
+}
+
+.left__hand{
+    font-size: 150px;
+    transform: scaleY(-1) rotate(-153deg);
+    font-family:fantasy;
+    animation: lefthand 1s infinite;
+}
+
+@keyframes lefthand{
+    0%{
+        transform: rotate(-153deg);
+    }
+    100%{
+        transform: rotate(-140deg);
+    }
+}
+@keyframes righthand{
+    0%{
+        transform: scaleY(-1) rotate(20deg);
+    }
+    100%{
+        transform: scaleY(-1) rotate(30deg);
+    }
+}
+
+.right__hand{
+    font-size: 150px;
+    font-family:fantasy;
+  transform: scaleY(-1) rotate(20deg);
+  animation: righthand 1s infinite;
+
+}
+
+.body{
+    font-size: 150px;
+    background-color: black;
+}
+
+.left__leg{
+    position: absolute;
+    font-family:fantasy;
+    font-size: 100px;
+    top: 260px;
+    left: 240px;
+}
+
+.right__leg{
+    position: absolute;
+    font-family:fantasy;
+    font-size: 100px;
+    top: 260px;
+    left: 280px;
+}
+
+.left__foot{
+    position: absolute;
+    top: 330px;
+    font-family:monospace;
+    left: 270px;
+    font-weight:bold;
+    font-size:80px;
+    color: rgb(0, 0, 0);
+  }
+  .right__foot{
+    position: absolute;
+    top: 330px;
+    font-family:monospace;
+    left: 233px;
+    font-weight:bold;
+    font-size:80px;
+    color: rgb(0, 0, 0);
+}
+
+.left{
+    transition: leftAnimation all ease 2s;
+}
+
+
+  
+/* @keyframes leftAnimation {
+    0%{
+        transform: scaleY(-1) rotate(20deg);
+    }
+    100%{
+        transform: scaleY(-1) rotate(30deg);
+    }
+} */
